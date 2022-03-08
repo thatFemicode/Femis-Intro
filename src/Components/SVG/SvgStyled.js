@@ -8,10 +8,21 @@ export const SvgStyled = styled.div`
   right: -40px;
   animation: animate 30s linear infinite;
   transform-origin: center;
-  @media (max-width: ${({ theme }) => theme.desktop}) {
+  @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
+    width: 200px;
+    height: 200px;
+    bottom: -20px;
+  }
+  @media (max-width: ${({ theme }) => theme.service}) {
     width: 200px;
     height: 200px;
     bottom: -30px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.max}) {
+    width: 150px;
+    height: 150px;
+    left: -10px;
   }
 
   .svg-2 textPath[data-v-4df41337] {
