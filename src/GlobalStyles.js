@@ -47,15 +47,18 @@ const GlobalStyle = createGlobalStyle`
 }
 html {
   scroll-behavior: smooth;
+  position: relative;
 }
 body{
   /* background-color:pink; */
 /* overflow: hidden; */
 overflow-x: hidden;
+position: relative;
 height:100vh;
 width:100%;
 color:var(--black);
 background-color:#e4e0df;
+background-color: #f5f0ec;
 /* background-color:#e9dbd4; */
 -ms-overflow-style: none; /* Internet Explorer 10+ */
 scrollbar-width: none; /* Firefox */
