@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { HomeStyled } from "./HomeStyled";
-import logo from "../../Images/";
+import Svg from "../../Components/SVG/Svg";
+
 const Home = () => {
   return (
     <HomeStyled>
-      <img src={logo} alt="" />
+      <div className="home-header">
+        <p>Ogunleye Oluwafemi</p>
+      </div>
+      <Svg />
     </HomeStyled>
   );
 };
