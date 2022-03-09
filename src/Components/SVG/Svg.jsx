@@ -1,9 +1,9 @@
 import React from "react";
 import { SvgStyled } from "./SvgStyled";
-
-const Svg = () => {
+import { forwardRef } from "react";
+const Svg = forwardRef(({}, ref) => {
   return (
-    <SvgStyled>
+    <SvgStyled ref={ref}>
       <svg
         data-v-4df41337=""
         xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +26,6 @@ const Svg = () => {
       </svg>
     </SvgStyled>
   );
-};
+});
 
 export default Svg;
