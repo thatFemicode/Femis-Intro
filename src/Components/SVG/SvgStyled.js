@@ -13,7 +13,7 @@ export const SvgStyled = styled.div`
     height: 200px;
     bottom: -20px;
   }
-  @media (max-width: ${({ theme }) => theme.service}) {
+  @media (max-width: ${({ theme }) => theme.kobe}) {
     width: 200px;
     height: 200px;
     bottom: -30px;

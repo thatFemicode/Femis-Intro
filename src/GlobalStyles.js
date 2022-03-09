@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    
     }
     &:before{
      margin: 0;
@@ -48,6 +49,7 @@ const GlobalStyle = createGlobalStyle`
 html {
   scroll-behavior: smooth;
   position: relative;
+  font-size:100%;
 }
 body{
   /* background-color:pink; */
@@ -57,6 +59,7 @@ position: relative;
 height:100vh;
 width:100%;
 color:var(--black);
+font-size:100%;
 /* background-color:#e4e0df; */
 background-color: #f5f0ec;
 background-color: #f6f8fb;

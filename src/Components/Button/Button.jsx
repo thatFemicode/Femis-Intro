@@ -17,34 +17,43 @@ const ButtonStyled = styled.button`
   max-width: 200px;
   svg {
     width: 1.2rem;
+    transform: ${({ rotate }) => (rotate ? "rotate(180deg)" : "rotate(0deg)")};
   }
   @media (max-width: ${({ theme }) => theme.se}) {
     font-size: 0.7rem;
     padding: 0.15rem 0.55rem;
   }
 `;
-const PrimaryButton = forwardRef(({ name, bgColor, margin, color }, ref) => {
-  return (
-    <ButtonStyled ref={ref} bgColor={bgColor} margin={margin} color={color}>
-      {name}
-      <svg viewBox="0 0 20 20" fill="none">
-        <path
-          d="M6 10H14"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        ></path>
-        <path
-          d="M10 6L14 10L10 14"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        ></path>
-      </svg>
-    </ButtonStyled>
-  );
-});
+const PrimaryButton = forwardRef(
+  ({ name, bgColor, margin, color, rotate }, ref) => {
+    return (
+      <ButtonStyled
+        rotate={rotate}
+        ref={ref}
+        bgColor={bgColor}
+        margin={margin}
+        color={color}
+      >
+        {name}
+        <svg viewBox="0 0 20 20" fill="none">
+          <path
+            d="M6 10H14"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></path>
+          <path
+            d="M10 6L14 10L10 14"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></path>
+        </svg>
+      </ButtonStyled>
+    );
+  }
+);
 
 export default PrimaryButton;
