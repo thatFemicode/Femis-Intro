@@ -68,7 +68,7 @@ const Home = () => {
             <h1 id="header-text" ref={(el) => (text1 = el)}>
               Hi there
             </h1>
-            <p ref={(el) => (text2 = el)}>Ogunleye here, Frontend Developer</p>
+            <p ref={(el) => (text2 = el)}>Oluwafemi here, Frontend Developer</p>
             <Link to="/about">
               <PrimaryButton ref={button} name={"About"} bgColor={"#333"} />
             </Link>

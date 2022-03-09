@@ -1,7 +1,7 @@
 import React from "react";
 import { SvgStyled } from "./SvgStyled";
 import { forwardRef } from "react";
-const Svg = forwardRef(({}, ref) => {
+const Svg = forwardRef(({ children }, ref) => {
   return (
     <SvgStyled ref={ref}>
       <svg
