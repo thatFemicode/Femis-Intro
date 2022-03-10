@@ -127,6 +127,9 @@ export const HomeStyled = styled.main`
           font-size: 9rem;
           line-height: 1.6;
         }
+        @media screen and (min-height: 1000px) and (max-height: 1180px) and (max-width: 820px) {
+          font-size: 7rem;
+        }
         @media screen and (min-height: 100px) and (max-height: 600px) and (max-width: 1024px) {
           font-size: 5.5rem;
         }

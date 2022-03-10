@@ -18,6 +18,13 @@ const ButtonStyled = styled.button`
   svg {
     width: 1.2rem;
     transform: ${({ rotate }) => (rotate ? "rotate(180deg)" : "rotate(0deg)")};
+    @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
+    }
+  }
+  @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    padding: 0.45rem 0.95rem;
   }
   @media (max-width: ${({ theme }) => theme.se}) {
     font-size: 0.7rem;
