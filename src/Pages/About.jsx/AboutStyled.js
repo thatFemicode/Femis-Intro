@@ -71,8 +71,15 @@ export const AboutStyled = styled.main`
       @media (max-width: ${({ theme }) => theme.desktop}) {
         padding-top: 3rem;
       }
+
       .top-text {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
         font-size: 3.5rem;
+        /* letter-spacing: 0.4rem;
+        text-transform: uppercase; */
         clip-path: inset(0 0 0 0);
         z-index: 20;
         /* letter-spacing: 0.1rem; */
@@ -118,17 +125,19 @@ export const AboutStyled = styled.main`
           font-size: 1.8rem;
           -webkit-text-stroke: 1.2px rgba(0, 0, 0, 0.7);
         }
-        @media screen and (min-height: 780px) and (max-height: 897px) and (max-width: 414px) {
+        @media screen and (min-height: 780px) and (max-height: 914px) and (max-width: 414px) {
           font-size: 2.3rem;
+        }
+        @media screen and (min-height: 780px) and (max-height: 852px) and (max-width: 393px) {
+          font-size: 2rem;
         }
         @media (max-width: ${({ theme }) => theme.foot}) {
           font-size: 1.5rem;
           -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.7);
           /* max-width: 500px; */
-          bottom: 25%;
         }
         @media screen and (min-height: 780px) and (max-height: 812px) and (max-width: 375px) {
-          font-size: 2rem;
+          font-size: 1.9rem;
         }
         @media (max-width: ${({ theme }) => theme.se}) {
           font-size: 1.3rem;
@@ -137,9 +146,16 @@ export const AboutStyled = styled.main`
         @media screen and (min-height: 500px) and (max-height: 568px) and (max-width: 325px) {
           font-size: 1.2rem;
         }
+        > div {
+          display: block;
+        }
       }
+
       .mid-text {
         position: absolute;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
         bottom: 10%;
         left: 25%;
         max-width: 600px;
@@ -202,18 +218,21 @@ export const AboutStyled = styled.main`
           bottom: 12%;
         }
         @media (max-width: ${({ theme }) => theme.make}) {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           bottom: 20%;
-          left: 20%;
+          left: 25%;
+          max-width: 300px;
+          /* max-width: 300px; */
           -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.9);
         }
         @media (max-width: ${({ theme }) => theme.max}) {
           font-size: 1.1rem;
           -webkit-text-stroke: 0.9px rgba(0, 0, 0, 0.7);
-          max-width: 500px;
+          max-width: 300px;
           bottom: 25%;
+          left: 5%;
         }
-        @media screen and (min-height: 780px) and (max-height: 897px) and (max-width: 414px) {
+        @media screen and (min-height: 780px) and (max-height: 914px) and (max-width: 414px) {
           bottom: 15%;
         }
         @media screen and (min-height: 780px) and (max-height: 812px) and (max-width: 375px) {

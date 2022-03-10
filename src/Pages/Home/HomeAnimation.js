@@ -92,6 +92,7 @@ const HomeAnimation = (
       stagger: {
         amount: 1,
       },
-    });
+    })
+    .to(node9, { transform: "unset", ease: "power2.out" });
 };
 export default HomeAnimation;

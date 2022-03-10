@@ -163,6 +163,9 @@ export const HomeStyled = styled.main`
           letter-spacing: 0.1rem;
           line-height: 2.1;
         }
+        @media screen and (min-height: 780px) and (max-height: 812px) and (max-width: 375px) {
+          font-size: 3rem;
+        }
         @media (max-width: ${({ theme }) => theme.se}) {
           font-size: 2.6rem;
           letter-spacing: 0.1rem;
