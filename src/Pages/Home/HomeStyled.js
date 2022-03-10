@@ -16,6 +16,7 @@ export const HomeStyled = styled.main`
   @media (max-width: ${({ theme }) => theme.max}) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-top: 2rem;
   }
 
   .home {
@@ -158,7 +159,7 @@ export const HomeStyled = styled.main`
           line-height: 1.6;
         }
         @media (max-width: ${({ theme }) => theme.foot}) {
-          font-size: 3rem;
+          font-size: 2.2rem;
           letter-spacing: 0.1rem;
           line-height: 2.1;
         }

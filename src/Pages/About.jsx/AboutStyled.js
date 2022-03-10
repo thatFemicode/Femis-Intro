@@ -15,6 +15,7 @@ export const AboutStyled = styled.main`
   @media (max-width: ${({ theme }) => theme.max}) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-top: 2rem;
   }
   .about {
     &-header {
@@ -47,6 +48,10 @@ export const AboutStyled = styled.main`
           font-size: 0.9rem;
           -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
           letter-spacing: 0.4rem;
+        }
+        @media (max-width: ${({ theme }) => theme.se}) {
+          font-size: 0.8rem;
+          letter-spacing: 0.1rem;
         }
       }
       img {
@@ -113,11 +118,24 @@ export const AboutStyled = styled.main`
           font-size: 1.8rem;
           -webkit-text-stroke: 1.2px rgba(0, 0, 0, 0.7);
         }
+        @media screen and (min-height: 780px) and (max-height: 897px) and (max-width: 414px) {
+          font-size: 2.3rem;
+        }
         @media (max-width: ${({ theme }) => theme.foot}) {
           font-size: 1.5rem;
-          -webkit-text-stroke: 0.9px rgba(0, 0, 0, 0.7);
+          -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.7);
           /* max-width: 500px; */
           bottom: 25%;
+        }
+        @media screen and (min-height: 780px) and (max-height: 812px) and (max-width: 375px) {
+          font-size: 2rem;
+        }
+        @media (max-width: ${({ theme }) => theme.se}) {
+          font-size: 1.3rem;
+          letter-spacing: 0.1rem;
+        }
+        @media screen and (min-height: 500px) and (max-height: 568px) and (max-width: 325px) {
+          font-size: 1.2rem;
         }
       }
       .mid-text {
@@ -195,6 +213,20 @@ export const AboutStyled = styled.main`
           max-width: 500px;
           bottom: 25%;
         }
+        @media screen and (min-height: 780px) and (max-height: 897px) and (max-width: 414px) {
+          bottom: 15%;
+        }
+        @media screen and (min-height: 780px) and (max-height: 812px) and (max-width: 375px) {
+          bottom: 15%;
+        }
+        @media (max-width: ${({ theme }) => theme.se}) {
+          font-size: 1rem;
+          bottom: 17%;
+        }
+        @media screen and (min-height: 500px) and (max-height: 568px) and (max-width: 325px) {
+          font-size: 0.9rem;
+          bottom: 15%;
+        }
       }
     }
     &-links {
@@ -204,6 +236,9 @@ export const AboutStyled = styled.main`
       width: 200px;
       @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
         width: 300px;
+      }
+      @media screen and (min-height: 500px) and (max-height: 568px) and (max-width: 325px) {
+        width: 150px;
       }
     }
   }

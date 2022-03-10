@@ -24,6 +24,10 @@ export const SvgStyled = styled.div`
     height: 150px;
     left: -10px;
   }
+  @media screen and (min-height: 500px) and (max-height: 568px) and (max-width: 325px) {
+    width: 100px;
+    height: 100px;
+  }
 
   .svg-2 textPath[data-v-4df41337] {
     font-size: 24px;
