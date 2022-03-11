@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import PrimaryButton from "../../Components/Button/Button";
 import AboutAnimation from "./AboutAnimation";
 import PrevButton from "../../Components/Button/PrevButton";
+
 const About = () => {
   const header = useRef(null);
   let text1 = useRef(null);

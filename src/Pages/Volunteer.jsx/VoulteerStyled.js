@@ -47,6 +47,11 @@ export const VolunteerStyled = styled.main`
           -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
           letter-spacing: 0.4rem;
         }
+        @media (max-width: ${({ theme }) => theme.foot}) {
+          font-size: 0.9rem;
+          -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+          letter-spacing: 0.2rem;
+        }
         @media (max-width: ${({ theme }) => theme.se}) {
           font-size: 0.8rem;
           letter-spacing: 0.1rem;
@@ -119,22 +124,22 @@ export const VolunteerStyled = styled.main`
           -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.6);
         }
         @media (max-width: ${({ theme }) => theme.max}) {
-          font-size: 1.8rem;
+          font-size: 1.65rem;
           -webkit-text-stroke: 1.2px rgba(0, 0, 0, 0.7);
         }
         @media screen and (min-height: 780px) and (max-height: 914px) and (max-width: 414px) {
-          font-size: 2.3rem;
+          font-size: 1.9rem;
         }
         @media screen and (min-height: 780px) and (max-height: 852px) and (max-width: 393px) {
           font-size: 2rem;
         }
         @media (max-width: ${({ theme }) => theme.foot}) {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.7);
           /* max-width: 500px; */
         }
         @media screen and (min-height: 780px) and (max-height: 812px) and (max-width: 375px) {
-          font-size: 1.9rem;
+          font-size: 1.7rem;
         }
         @media (max-width: ${({ theme }) => theme.se}) {
           font-size: 1.3rem;
@@ -237,23 +242,38 @@ export const VolunteerStyled = styled.main`
           font-size: 1.1rem;
           -webkit-text-stroke: 0.9px rgba(0, 0, 0, 0.7);
           max-width: 300px;
-          bottom: 25%;
-          left: 5%;
+          bottom: 5%;
+          left: 15%;
         }
+
         @media screen and (min-height: 780px) and (max-height: 914px) and (max-width: 414px) {
           bottom: 15%;
+          font-size: 1.3rem;
         }
         @media screen and (min-height: 780px) and (max-height: 812px) and (max-width: 375px) {
           bottom: 15%;
+          left: 10%;
         }
         @media (max-width: ${({ theme }) => theme.se}) {
           font-size: 1rem;
-          bottom: 17%;
+          bottom: 5%;
         }
         @media screen and (min-height: 500px) and (max-height: 568px) and (max-width: 325px) {
           font-size: 0.9rem;
-          bottom: 15%;
+          bottom: 5%;
         }
+      }
+    }
+    &-links {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+      @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
+        width: 300px;
+      }
+      @media screen and (min-height: 500px) and (max-height: 568px) and (max-width: 325px) {
+        width: 150px;
       }
     }
   }

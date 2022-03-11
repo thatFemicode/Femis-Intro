@@ -22,7 +22,7 @@ export const SvgStyled = styled.div`
   @media (max-width: ${({ theme }) => theme.max}) {
     width: 150px;
     height: 150px;
-    left: -10px;
+    right: 0;
   }
   @media screen and (min-height: 500px) and (max-height: 568px) and (max-width: 325px) {
     width: 100px;
