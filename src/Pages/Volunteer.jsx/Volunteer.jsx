@@ -46,7 +46,7 @@ const Volunteer = () => {
             Oluwafemi is looking to volunteer as a
             <span> frontend developer </span>
             for organizations looking for volunteers and also collaborate with
-            junior developers like himself and designers.
+            developers, creatives and designers.
           </p>
           <div className="mid-text" ref={(el) => (text2 = el)}>
             I believe i have what it takes to make an impact in creating amazing

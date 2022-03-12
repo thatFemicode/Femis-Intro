@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import { MainStyled } from "./MainStyled";
 import { ThemeProvider } from "styled-components";
 import Home from "./Pages/Home/Home";
-import Skills from "./Pages/Skills.jsx/Skills";
+import Contact from "./Pages/Contact/Contact";
 import Volunteer from "./Pages/Volunteer.jsx/Volunteer";
 import About from "./Pages/About.jsx/About";
 
@@ -53,7 +53,7 @@ function App() {
           <CustomRoute>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/volunteer" element={<Volunteer />} />
           </CustomRoute>
         </MainStyled>

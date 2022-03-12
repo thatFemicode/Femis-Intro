@@ -22,7 +22,7 @@ const ButtonStyled = styled.button`
     }
   }
   @media screen and (min-height: 1000px) and (max-height: 1366px) and (max-width: 1024px) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
     padding: 0.45rem 0.95rem;
   }
