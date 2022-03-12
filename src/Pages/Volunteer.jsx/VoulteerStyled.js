@@ -236,7 +236,7 @@ export const VolunteerStyled = styled.main`
         }
         @media (max-width: ${({ theme }) => theme.make}) {
           font-size: 1.2rem;
-          bottom: 15%;
+          bottom: 2%;
           left: 25%;
           max-width: 300px;
           /* max-width: 300px; */

@@ -12,7 +12,6 @@ const Volunteer = () => {
   const header = useRef(null);
   let text1 = useRef(null);
   let text2 = useRef(null);
-
   const button1 = useRef(null);
   const button2 = useRef(null);
   useEffect(() => {
@@ -43,7 +42,7 @@ const Volunteer = () => {
         </div>
         <div className="volunteer-content">
           <p ref={(el) => (text1 = el)}>
-            Oluwafemi is looking to volunteer as a
+            Oluwafemi is looking to volunteer remotely as a
             <span> frontend developer </span>
             for organizations looking for volunteers and also collaborate with
             developers, creatives and designers.
