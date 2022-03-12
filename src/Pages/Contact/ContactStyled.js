@@ -212,7 +212,6 @@ export const ContactStyled = styled.main`
           letter-spacing: 0.3rem;
           -webkit-text-stroke: 1.2px rgba(0, 0, 0, 0.7);
         }
-
         @media (max-width: ${({ theme }) => theme.foot}) {
           font-size: 1rem;
           -webkit-text-stroke: 0.8px rgba(0, 0, 0, 0.7);

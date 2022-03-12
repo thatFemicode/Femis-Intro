@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { OuterLayout } from "../../Layout/Layout";
 import { ContactStyled } from "./ContactStyled";
 import Logo from "../../Images/Logo.svg";
-import { Link } from "react-router-dom";
+
 const Contact = () => {
   const [hours, setHours] = useState();
   const [mins, setMins] = useState();
@@ -18,6 +18,9 @@ const Contact = () => {
       greet = "Afternoon";
     } else {
       greet = "evening";
+    }
+    if (mins < 10) {
+      mins = "0" + mins;
     }
     setGreet(greet);
     setHours(hours);
