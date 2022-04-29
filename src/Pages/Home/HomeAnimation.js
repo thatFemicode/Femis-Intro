@@ -49,7 +49,7 @@ const HomeAnimation = (
       ease: Power3.easeInOut,
       delay: 0.3,
     })
-    .to(node1, { bottom: "100%", duration: 2 })
+    .to(node1, { bottom: "100%", duration: 1 })
     .from(node4, {
       duration: 0.3,
       opacity: 0,

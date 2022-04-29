@@ -326,7 +326,7 @@ export const ContactStyled = styled.main`
         width: 100%;
         align-items: center;
         position: relative;
-        bottom: -200px;
+        bottom: -150px;
         @media (max-width: ${({ theme }) => theme.dont}) {
           flex-direction: column;
         }

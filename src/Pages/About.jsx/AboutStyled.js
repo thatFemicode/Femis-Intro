@@ -6,6 +6,7 @@ export const AboutStyled = styled.main`
   overflow: hidden;
   position: relative;
   padding: 3rem;
+  opacity: 0;
   /* padding-left: 5rem;
   padding-right: 5rem; */
   @media (max-width: ${({ theme }) => theme.desktop}) {
@@ -249,7 +250,6 @@ export const AboutStyled = styled.main`
       }
     }
     &-links {
-      height: 100%;
       display: flex;
       justify-content: space-between;
       width: 200px;

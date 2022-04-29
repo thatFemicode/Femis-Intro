@@ -53,11 +53,11 @@ const Contact = () => {
     let line1 = split.words;
     let line2 = spli.words;
     let line3 = spl.words;
-    contactAnimation(header.current, line1, line2, line3, bottom);
+    contactAnimation(header.current, line1, line2, line3, bottom, demo);
     // getTime();
   }, []);
   return (
-    <ContactStyled>
+    <ContactStyled ref={(el) => (demo = el)}>
       <OuterLayout>
         <div className="contact-header" ref={header}>
           <h1> Swayed You?</h1>
@@ -71,7 +71,7 @@ const Contact = () => {
             Leyedavid10@gmail.com
           </p>
           <p className="time" ref={(el) => (text3 = el)}>
-            Dont Worry I'd reply your mail, lets go 🚀,
+            Dont Worry I'd reply your mail, #Godspeed, lets go!!!!,
           </p>
           <div className="confused" ref={(el) => (bottom = el)}>
             <p>Still not swayed, click on the Logo to visit my portfolio</p>

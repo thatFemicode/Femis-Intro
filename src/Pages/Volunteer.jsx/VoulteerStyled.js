@@ -6,6 +6,7 @@ export const VolunteerStyled = styled.main`
   overflow: hidden;
   position: relative;
   padding: 3rem;
+  opacity: 0;
   @media (max-width: ${({ theme }) => theme.desktop}) {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -273,7 +274,6 @@ export const VolunteerStyled = styled.main`
       }
     }
     &-links {
-      height: 100%;
       display: flex;
       justify-content: space-between;
       width: 200px;

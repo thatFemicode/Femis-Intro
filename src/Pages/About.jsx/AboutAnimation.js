@@ -1,12 +1,13 @@
-import { Power3, Power4, gsap } from "gsap";
-const AboutAnimation = (node1, node2, node3, node4, node5, node6) => {
+import { gsap } from "gsap";
+const AboutAnimation = (node1, node2, node3, node4, node5, node6, node7) => {
   let tl = gsap.timeline();
-  tl.from(node1, {
-    opacity: 0,
-    scale: 1.5,
-    x: 100,
-    duration: 1,
-  })
+  tl.to(node7, { duration: 0.5, opacity: 1 })
+    .from(node1, {
+      opacity: 0,
+      scale: 1.5,
+      x: 100,
+      duration: 1,
+    })
     .from(node2, {
       duration: 1,
       y: 20,
@@ -16,6 +17,7 @@ const AboutAnimation = (node1, node2, node3, node4, node5, node6) => {
       stagger: 0.2,
       ease: "power2.out",
     })
+
     .from(node3, {
       duration: 1,
       y: 20,

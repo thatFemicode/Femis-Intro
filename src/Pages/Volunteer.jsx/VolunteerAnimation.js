@@ -1,11 +1,12 @@
 import gsap from "gsap";
-const VolunteerAnimation = (node1, node2, node3, node4, node5) => {
+const VolunteerAnimation = (node1, node2, node3, node4, node5, node6) => {
   let tl = gsap.timeline();
-  tl.from(node1, {
-    opacity: 0,
-    y: 60,
-    duration: 1,
-  })
+  tl.to(node6, { duration: 0.5, opacity: 1 })
+    .from(node1, {
+      opacity: 0,
+      y: 60,
+      duration: 1,
+    })
     .from(node2, {
       duration: 1,
       y: 20,

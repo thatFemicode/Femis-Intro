@@ -16,6 +16,7 @@ const About = () => {
   const rotator = useRef(null);
   const button1 = useRef(null);
   const button2 = useRef(null);
+  let demo = useRef(null);
 
   useEffect(() => {
     const split = new SplitText(text1, {
@@ -34,11 +35,12 @@ const About = () => {
       line2,
       button1.current,
       button2.current,
-      rotator.current
+      rotator.current,
+      demo
     );
   }, []);
   return (
-    <AboutStyled>
+    <AboutStyled ref={(el) => (demo = el)}>
       <OuterLayout>
         <div className="about-header" ref={header}>
           <img src={Logo} alt="" />

@@ -61,7 +61,7 @@ width:100%;
 color:var(--black);
 font-size:100%;
 /* background-color:#e4e0df; */
-background-color: #f5f0ec;
+/* background-color: #f5f0ec; */
 background-color: #f6f8fb;
 /* background-color:#e9dbd4; */
 -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -92,7 +92,20 @@ li{
   overflow:hidden;
 } */
 /
+.load-screen1 {
+  position: relative;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #000;
+  width: 100%;
+  height: 0%;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;
 
+}
 .load-container {
   position: fixed;
   top: 0;
@@ -115,6 +128,7 @@ li{
   padding-right: 0px;
   /* background-color: #fff; */
   background-color: #f5f0ec;
+background-color: #333;
   width: 100%;
   height: 0%;
   display:flex;

@@ -14,6 +14,7 @@ const Volunteer = () => {
   let text2 = useRef(null);
   const button1 = useRef(null);
   const button2 = useRef(null);
+  let demo = useRef(null);
   useEffect(() => {
     const split = new SplitText(text1, {
       type: "words",
@@ -30,11 +31,12 @@ const Volunteer = () => {
       line1,
       line2,
       button1.current,
-      button2.current
+      button2.current,
+      demo
     );
   }, []);
   return (
-    <VolunteerStyled>
+    <VolunteerStyled ref={(el) => (demo = el)}>
       <OuterLayout>
         <div className="volunteer-header" ref={header}>
           <h1> Frontend Developer</h1>
